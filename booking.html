@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Book Your Tour</h1>
+    </header>
+
+    <main>
+      <form action="#" method="POST">
+        <label for="tour-group">Tour Group Type:</label>
+        <select id="tour-group" name="tour-group">
+          <option value="small">Small Group (10-15 people)</option>
+          <option value="standard">Standard Group (35-40 people)</option>
+        </select>
+
+        <div class="flight-checkbox">
+          <input type="checkbox" id="join-land" name="join-land" />
+          <label for="join-land">Join Land (Buy your own flight tickets)</label>
+        </div>
+
+        <label for="num-travelers">Number of Travelers:</label>
+        <input
+          type="number"
+          id="num-travelers"
+          name="num-travelers"
+          min="1"
+          max="15"
+          required
+        />
+
+        <label for="contact-name">Contact Name:</label>
+        <input type="text" id="contact-name" name="contact-name" required />
+
+        <label for="contact-phone">Contact Phone:</label>
+        <input type="tel" id="contact-phone" name="contact-phone" required />
+
+        <button type="submit" class="book-button">Submit Booking</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>Student ID: 6733011221 | Name: Krittin Tragunejindarat</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
