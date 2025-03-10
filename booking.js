@@ -8,19 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (event) {
     let isValid = true;
 
-    // Validate contact name
     if (contactName.value.trim() === "") {
       alert("Contact Name cannot be empty.");
       isValid = false;
     }
 
-    // Validate contact phone
     if (contactPhone.value.trim() === "") {
       alert("Contact Phone cannot be empty.");
       isValid = false;
     }
 
-    // Validate number of travelers
     const numTravelersValue = parseInt(numTravelers.value, 10);
     if (
       isNaN(numTravelersValue) ||
@@ -44,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (!isValid) {
-      event.preventDefault(); // Prevent form submission if validation fails
+      event.preventDefault();
     }
   });
 });
